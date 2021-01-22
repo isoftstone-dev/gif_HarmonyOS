@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <com.isoftstone.modulea.Gif
+        ohos:id="$+id:testimg"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:gif6"
+        ohos:layout_alignment="horizontal_center"
+    />
+
+    <com.isoftstone.modulea.Gif
+        ohos:id="$+id:testimg1"
+        ohos:image_src="$media:coffe"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        />
+
+
+    <com.isoftstone.modulea.Gif
+        ohos:layout_alignment="horizontal_center"
+        ohos:height="match_content"
+        ohos:image_src="$media:deleting"
+        ohos:width="match_content"
+        ohos:id="$+id:text"
+        />
+
+</DirectionalLayout>

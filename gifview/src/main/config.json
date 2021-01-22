@@ -1,0 +1,40 @@
+{
+  "app": {
+    "bundleName": "com.isoftstone.mygifview",
+    "vendor": "isoftstone",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.isoftstone.modulea",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "modulea",
+      "moduleType": "feature"
+    },
+    "abilities": [
+      {
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.isoftstone.modulea.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "ModuleA",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
