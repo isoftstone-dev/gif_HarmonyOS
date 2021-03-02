@@ -1,1 +1,1 @@
-include ':entry', ':modulea'
+include ':entry', ':giflibrary',':seekbar_harmony'

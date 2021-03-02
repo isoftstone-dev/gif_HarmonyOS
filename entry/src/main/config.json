@@ -24,6 +24,30 @@
       "moduleName": "entry",
       "moduleType": "entry"
     },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_USER_STORAGE",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.isoftstone.mygifview.MainAbility",
+            "com.isoftstone.mygifview.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.isoftstone.mygifview.MainAbility",
+            "com.isoftstone.mygifview.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      }
+    ],
     "abilities": [
       {
         "skills": [

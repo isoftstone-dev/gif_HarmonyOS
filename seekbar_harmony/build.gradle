@@ -1,0 +1,15 @@
+apply plugin: 'com.huawei.ohos.library'
+//apply from:'../upload.gradle'
+
+ohos {
+    compileSdkVersion 4
+    defaultConfig {
+        compatibleSdkVersion 4
+    }
+    
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile'junit:junit:4.12'
+}

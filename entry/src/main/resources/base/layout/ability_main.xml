@@ -1,33 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DirectionalLayout
+<DependentLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:background_element="$graphic:color_black_element"
     ohos:orientation="vertical">
 
-    <com.isoftstone.modulea.Gif
-        ohos:id="$+id:testimg"
+    <DirectionalLayout
+        ohos:id="$+id:toplayout"
         ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:image_src="$media:gif6"
-        ohos:layout_alignment="horizontal_center"
-    />
+        ohos:width="match_parent"
+        ohos:top_padding="10vp">
 
-    <com.isoftstone.modulea.Gif
-        ohos:id="$+id:testimg1"
-        ohos:image_src="$media:coffe"
+        <com.isoftstone.giflibrary.Gif
+            ohos:id="$+id:testimg"
+            ohos:height="200vp"
+            ohos:width="200vp"
+            ohos:image_src="$media:gif6"
+            ohos:layout_alignment="horizontal_center"
+            ohos:scale_mode="clip_center"
+            />
+
+    </DirectionalLayout>
+
+    <DependentLayout
+        ohos:width="match_parent"
         ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:layout_alignment="horizontal_center"
-        />
+        ohos:orientation="horizontal"
+        ohos:below="$+id:toplayout"
+        ohos:margin="20vp"
+        >
+        <Button
+            ohos:id="$+id:button_gif_pause"
+            ohos:width="40vp"
+            ohos:height="40vp"
+            ohos:background_element="$media:pause"
+            ohos:start_of="$+id:button_gif_play"/>
+        <Button
+            ohos:id="$+id:button_gif_play"
+            ohos:width="40vp"
+            ohos:height="40vp"
+            ohos:background_element="$media:play"
+            ohos:horizontal_center="true" />
+        <Button
+            ohos:id="$+id:button_gif_next"
+            ohos:width="40vp"
+            ohos:height="40vp"
+            ohos:background_element="$media:next"
+            ohos:end_of="$+id:button_gif_play" />
 
-
-    <com.isoftstone.modulea.Gif
-        ohos:layout_alignment="horizontal_center"
+    </DependentLayout>
+    <Text
         ohos:height="match_content"
-        ohos:image_src="$media:deleting"
-        ohos:width="match_content"
-        ohos:id="$+id:text"
-        />
+        ohos:width="match_parent"
+        ohos:text="speed"
+        ohos:text_size="20vp"
+        ohos:text_alignment="horizontal_center"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:below="$+id:seekbar"/>
 
-</DirectionalLayout>
+    <com.example.seekbar_harmony.SeekBarComponent
+        ohos:height="20vp"
+        ohos:width="match_parent"
+        ohos:id="$+id:seekbar"
+        ohos:center_in_parent="true"/>
+
+</DependentLayout>
